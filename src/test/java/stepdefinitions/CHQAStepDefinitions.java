@@ -35,4 +35,8 @@ public class CHQAStepDefinitions {
         Assert.assertTrue(chqaPage.girisYapilamadiYazisiElementi.isDisplayed());
     }
 
+    @Then("CH basarili giris yapildigini test eder")
+    public void chBasariliGirisYapildiginiTestEder() {
+        Assert.assertTrue(chqaPage.girisYapildiKontrolYazi.isDisplayed());
+    }
 }

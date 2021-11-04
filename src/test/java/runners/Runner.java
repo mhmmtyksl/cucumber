@@ -8,15 +8,20 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class) // bunun anlami testlerimizi cucumber ile birlikte calistir demektir.
 @CucumberOptions (
+        plugin={"html:target/cucumber-reports.html", // burdan her defasinda ismini degismek lazim raporun yoksa uzerine yazar
+                "json:target/json-reports/cucumber.json", // windowsta target tan sonra / yerine
+                "junit:target/xml-report/cucumber.xml"},
+
+
         features = "src/test/resources/features", // dosayanin uzerine sag tiklayip copy/content ile kopyaladik
         glue = "stepdefinitions", // bu adresi de content ile alinca hata verdi calismadi o sebeple sadece boyle yazdim
-        tags = "@editor", // buraya feuatures da yazan notasyonlari yaziyoruz
+        tags = "@CH1", // buraya feuatures da yazan notasyonlari yaziyoruz
         // anlami bu notasyonun yazili olduklarini calistir demek
         // burada and veya or yazabiliriz
         // and olursa ikisininde yazili olduguklarini calistirir
         // or olursa ikisinden birinin yazili olduklarini calistirir.
 
-        dryRun = true
+        dryRun = false
         // burasi false iken calistirirsak testi calistirir eksik bir adimla karsilasirsa
         // test failed olur ve bize eksik adimi raporlar
         // dryRun true dedigimizde testi calistirmadan bize eksik adimi verir ama run etmez

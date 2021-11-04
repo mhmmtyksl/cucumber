@@ -15,7 +15,7 @@ Feature: US1001 amazon arama
     Then sonucun java icerdigini test eder
     And sayfayi kapatir
 
-  @amazon @ipad
+  @amazon @ipad @rapor2
   Scenario: TC03 amazon ipad arama
     When kullanici amazon sayfasina gider
     And ipad icin arama yapar
