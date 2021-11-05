@@ -7,10 +7,12 @@ Feature: US1008 coklu parametreli bir step ile editor kisi ekler
     Then new butonuna basar
     And ilgili kutulara "<firstName>"  "<lastName>"  "<position>"  "<office>"  "<extension>" "<startDate>" "<salary>" bilgilerini girer
     And Create tusuna basar
+    # burada bir onceki feature dosyasinda oldugu gibi tek tek degil bunun yerine
+    # hepsini tek satirla yazdirdik
 
 
     Examples:
       |firstName| lastName|position|office|extension|startDate|salary|
-      |Hakan    |Tetik    |TestLead|Paris |ali      |2021-01-21|60000|
-      |Murat    |Ercoban  |QA      |Kenya |126      |2021/01/20|40000|
-      |Furkan   |Yilmaz   |QA      |Adana |130      |2021.03.21|80.000|
+      |Hakan    |Tetik    |TestLead|Paris |354      |2021-01-21|60000|
+      |Murat    |Ercoban  |QA      |Kenya |126      |2021-01-20|40000|
+      |Furkan   |Yilmaz   |QA      |Adana |130      |2021-03-21|80000|

@@ -1,0 +1,12 @@
+stepdefinitions/Hooks.class
+pages/EditorPage.class
+stepdefinitions/AmazonStepDefinitions.class
+stepdefinitions/CHQAStepDefinitions.class
+runners/ParalelTestRunner1.class
+utilities/Driver.class
+runners/ParalelTestRunner2.class
+runners/Runner.class
+utilities/ConfigReader.class
+pages/CHQAPage.class
+pages/AmazonPage.class
+stepdefinitions/EditorStepDefinitions.class

@@ -1,4 +1,4 @@
-
+@Paralel1
 @rapor1
 Feature: US1002 amazon background ile arama
 

@@ -16,6 +16,7 @@ public class EditorStepDefinitions {
     public void new_butonuna_basar() {
         editorPage.newButonu.click();
     }
+
     @Then("editor firstName kutusuna {string} bilgileri girer")
     public void editor_first_name_kutusuna_bilgileri_girer(String firstName) {
         editorPage.firtNameKutusu.sendKeys(firstName);
@@ -50,7 +51,9 @@ public class EditorStepDefinitions {
     }
     @And("ilgili kutulara {string}  {string}  {string}  {string}  {string} {string} {string} bilgilerini girer")
     public void ilgiliKutularaBilgileriniGirer(String firstname, String lastName, String position, String office, String extension, String startDate, String salary) {
-
+// burada hepsine anlamli isimlerini verdikki karisiklik olmasin dahga sonra action ile herbirini sirayla doldurduk
+        // ama bu sekilde yazmak cok da pratiklik degil cunku zaten tum locatorler yapildi
+        // hepsi tek tek alinarak bir onceki feture da oldugu gibi yazmak daha mantikli
         actions.
                 sendKeys(firstname).
                 sendKeys(Keys.TAB).
@@ -76,7 +79,7 @@ public class EditorStepDefinitions {
 
         Thread.sleep(2000);
         editorPage.searchKutusu.click();
-        editorPage.searchKutusu.sendKeys(firstname + "     " + lastname + "dfdfdd");
+        editorPage.searchKutusu.sendKeys(firstname + " " + lastname );
         Assert.assertTrue(editorPage.isimAramaIlkSatir.isDisplayed());
 
     }

@@ -13,11 +13,11 @@ public class Hooks {
 
     }
     @After
-    public void tearDown(Scenario scenario){
+    public void tearDown(Scenario scenario){ // bu classin amaci testin Failed olmasi durumunda screnshot almasi icin.
         final byte[] screenshot=((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
         if (scenario.isFailed()) {
             scenario.attach(screenshot, "image/png","screenshots");
-        }
+        } // failed durumunda cekilen resimler raporun alt kisminda Attached image kisminda gozukur.
         Driver.closeDriver();
     }
 }

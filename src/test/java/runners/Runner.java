@@ -10,12 +10,14 @@ import org.junit.runner.RunWith;
 @CucumberOptions (
         plugin={"html:target/cucumber-reports.html", // burdan her defasinda ismini degismek lazim raporun yoksa uzerine yazar
                 "json:target/json-reports/cucumber.json", // windowsta target tan sonra / yerine
-                "junit:target/xml-report/cucumber.xml"},
-
+                "junit:target/xml-report/cucumber.xml"}, // rapor almak istiyorsak bu sayfadan calistirmak lazim eger feature sayfasindan
+                                                        // run edersek kod calisir ana rapor vermez cunku rapor bu sayfanin icinde.
+                                                        // dry Run true ise test calismaz sadece eksik adim var mi diye kontrol eder
+                                                        // true iken test failed olacak olsada pass diye gorunur ve rapor da pass diye cikar
 
         features = "src/test/resources/features", // dosayanin uzerine sag tiklayip copy/content ile kopyaladik
         glue = "stepdefinitions", // bu adresi de content ile alinca hata verdi calismadi o sebeple sadece boyle yazdim
-        tags = "@CH1", // buraya feuatures da yazan notasyonlari yaziyoruz
+        tags = "@screenshot", // buraya feuatures da yazan notasyonlari yaziyoruz
         // anlami bu notasyonun yazili olduklarini calistir demek
         // burada and veya or yazabiliriz
         // and olursa ikisininde yazili olduguklarini calistirir
@@ -32,8 +34,6 @@ import org.junit.runner.RunWith;
         // ardindan calistiriyoruz.
         // veya feature sayfasinda taminladigimizda altini koyu ciziyor ve uzerine gidince method olustur diyor
         // oradan da olustur deyince stepdefinitons ta method olusturuluyor.
-
-
 
 
 )
