@@ -85,6 +85,9 @@
                     <useFile>false</useFile>
                     <includes>
                         <include>**/runners/*TestRunner*.java</include>
+                        <!--calistirmak istedigimiz Runner classlarini burada belirtiyoruz
+                        basinda ve sonunda * koyarak basuí ve sonu onemli degil arada TestRunner
+                        olanlari calistir demek -->
                     </includes>
                     <testFailureIgnore>true</testFailureIgnore>
                 </configuration>

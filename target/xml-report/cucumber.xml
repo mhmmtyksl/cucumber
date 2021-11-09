@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="22.686">
+    <testcase classname="US1007 editor sayfasina farkli kullanicilar ekleyebilmeliyim" name="TC11 Editor sayfasina farkli kisiler ekleme" time="8.336">
+        <system-out>
+            <![CDATA[Given kullanici "editorUrl" sayfasina gider.................................passed
+Then new butonuna basar.....................................................passed
+And editor firstName kutusuna "Muhammet" bilgileri girer....................passed
+And editor lastName kutusuna "Yuksel" bilgileri girer.......................passed
+And editor position kutusuna "QA" bilgileri girer...........................passed
+And editor office kutusuna "Berlin" bilgileri girer.........................passed
+And editor extension kutusuna "123" bilgileri girer.........................passed
+And editor startDate kutusuna "2020-01-01" bilgileri girer..................passed
+And editor salary kutusuna "60000" bilgileri girer..........................passed
+And Create tusuna basar.....................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1007 editor sayfasina farkli kullanicilar ekleyebilmeliyim" name="TC11 Editor sayfasina farkli kisiler ekleme 2" time="7.177">
+        <system-out>
+            <![CDATA[Given kullanici "editorUrl" sayfasina gider.................................passed
+Then new butonuna basar.....................................................passed
+And editor firstName kutusuna "Ali" bilgileri girer.........................passed
+And editor lastName kutusuna "Can" bilgileri girer..........................passed
+And editor position kutusuna "Dev" bilgileri girer..........................passed
+And editor office kutusuna "Konya" bilgileri girer..........................passed
+And editor extension kutusuna "456" bilgileri girer.........................passed
+And editor startDate kutusuna "2020-02-02" bilgileri girer..................passed
+And editor salary kutusuna "70000" bilgileri girer..........................passed
+And Create tusuna basar.....................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1007 editor sayfasina farkli kullanicilar ekleyebilmeliyim" name="TC11 Editor sayfasina farkli kisiler ekleme 3" time="6.433">
+        <system-out>
+            <![CDATA[Given kullanici "editorUrl" sayfasina gider.................................passed
+Then new butonuna basar.....................................................passed
+And editor firstName kutusuna "Veli" bilgileri girer........................passed
+And editor lastName kutusuna "Cano" bilgileri girer.........................passed
+And editor position kutusuna "Devops" bilgileri girer.......................passed
+And editor office kutusuna "Kenya" bilgileri girer..........................passed
+And editor extension kutusuna "45645" bilgileri girer.......................passed
+And editor startDate kutusuna "2020-03-03" bilgileri girer..................passed
+And editor salary kutusuna "50000" bilgileri girer..........................passed
+And Create tusuna basar.....................................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

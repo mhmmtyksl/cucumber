@@ -17,7 +17,7 @@ import org.junit.runner.RunWith;
 
         features = "src/test/resources/features", // dosayanin uzerine sag tiklayip copy/content ile kopyaladik
         glue = "stepdefinitions", // bu adresi de content ile alinca hata verdi calismadi o sebeple sadece boyle yazdim
-        tags = "@screenshot", // buraya feuatures da yazan notasyonlari yaziyoruz
+        tags = "@editor", // buraya feuatures da yazan notasyonlari yaziyoruz
         // anlami bu notasyonun yazili olduklarini calistir demek
         // burada and veya or yazabiliriz
         // and olursa ikisininde yazili olduguklarini calistirir
