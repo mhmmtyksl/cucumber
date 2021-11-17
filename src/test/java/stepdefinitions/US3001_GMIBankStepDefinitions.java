@@ -7,7 +7,6 @@ import org.junit.Assert;
 import pages.US3001_Page;
 
 public class US3001_GMIBankStepDefinitions {
-
     US3001_Page us3001_page = new US3001_Page();
 
     @Then("gmibank giris butonuna tiklar")
@@ -55,6 +54,4 @@ public class US3001_GMIBankStepDefinitions {
     public void gmibankPasswordStrengthGreenGorunur() {
         Assert.assertTrue(us3001_page.green.isDisplayed());
     }
-
-
 }
