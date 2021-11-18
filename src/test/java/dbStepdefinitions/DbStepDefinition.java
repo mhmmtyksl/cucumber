@@ -29,7 +29,7 @@ public class DbStepDefinition {
     @Then("kullanici {string} tablosundaki {string} verilerini alir")
     public void kullaniciTablosundakiVerileriniAlir(String table, String field) throws SQLException {
         // SELECT Price FROM tHOTELROOM
-        String readQuery="SELECT " + field + " FROM " + table;
+        String readQuery="SELECT " + field + " FROM " + table; // anlami select price from tHotelroom
         resultSet=statement.executeQuery(readQuery);
     }
 
@@ -38,11 +38,12 @@ public class DbStepDefinition {
 
         // resultSet iterator gibi calisir.
         resultSet.first();// bu satiri yazmayinca hata verdi ve calismadi
+        // oncelikle adresi belirtmemiz gerekir. bu sekilde 1. ye git dedik ve getirdi
 
         System.out.println(resultSet.getObject(field).toString());
 
         System.out.println(resultSet.next()); // bu sekilde yazdirirsak boolean sonuc verir.
-        // resultSet.next(); bir sonraki elemente gecer sonraki eleman varsa true yoksa false doner
+        // resultSet.next(); bir sonraki objeye gecer sonraki eleman varsa true yoksa false doner
 
         System.out.println(resultSet.getObject(field).toString());
 

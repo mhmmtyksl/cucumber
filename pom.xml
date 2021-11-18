@@ -50,7 +50,7 @@
             <scope>test</scope>
         </dependency>
 
-        <!--bunu -->
+        <!--bunu JDBC ya de yani database testleri icin ekledik -->
         <dependency>
             <groupId>com.microsoft.sqlserver</groupId>
             <artifactId>mssql-jdbc</artifactId>

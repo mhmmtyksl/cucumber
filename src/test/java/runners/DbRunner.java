@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
                 "junit:target/xml-report/Pcucumber1.xml"},
         features = "src/test/resources/features",
         glue = "dbStepdefinitions",
-        tags = "@db", // @ tagi Paralel1 olanlari calistir dedik
+        tags = "@dbutill", // @ tagi Paralel1 olanlari calistir dedik
 
         dryRun = false
 )
